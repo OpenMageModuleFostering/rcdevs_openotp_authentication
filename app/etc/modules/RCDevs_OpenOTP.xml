@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <RCDevs_OpenOTP>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Admin />
+                <Mage_Adminhtml />
+            </depends>
+        </RCDevs_OpenOTP>
+    </modules>
+</config>

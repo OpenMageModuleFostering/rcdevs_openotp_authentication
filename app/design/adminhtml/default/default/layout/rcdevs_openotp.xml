@@ -1,0 +1,5 @@
+<layout version="0.1.0">
+    <adminhtml_openotp_login>
+        <block name="rcdevs.openotp.login" template="rcdevs_openotp/login.phtml" />
+    </adminhtml_openotp_login>
+</layout>

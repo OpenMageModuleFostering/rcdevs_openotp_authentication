@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+    <name>RCDevs_OpenOTP_Authentication</name>
+    <version>1.1.2</version>
+    <stability>stable</stability>
+    <license>GNU General Public License ( GPL )</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This Plugin enables strong two factor authentication for admins and users to connect to administration panel</summary>
+    <description>&lt;p&gt;This Plugin enables strong &lt;b&gt;two factor authentication&lt;/b&gt; for admins and users. It displays an overlay on Challenge-Response session, after fill in username and password. The plugin supports global, per role and per user settings configuration. The plugin will transparently handle any OpenOTP Login Mode including, LDAP only, OTP only and LDAP+OTP.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;OpenOTP is the RCDevs user authentication solution. OpenOTP is a server application which provides multiple (highly configurable) authentication schemes for your LDAP users, based on one-time passwords (OTP) technologies and including: &lt;ul&gt;&#xD;
+&lt;li&gt;OATH HOTP/TOTP/OCRA Software/Hardware Tokens&lt;/li&gt;&#xD;
+&lt;li&gt;Google Authenticator&lt;/li&gt;&#xD;
+&lt;li&gt;Mobile-OTP (mOTP) Software Tokens&lt;/li&gt;&#xD;
+&lt;li&gt;SMS One-Time Passwords&lt;/li&gt;&#xD;
+&lt;li&gt; Mail / Secure Mail One-Time Passwords&lt;/li&gt;&#xD;
+&lt;li&gt;Yubikey&lt;/li&gt;&lt;/ul&gt;&#xD;
+OpenOTP provides both SOAP/XML and RADIUS client APIs.&lt;/p&gt;</description>
+    <notes> - The plugin displays an overlay on Challenge-Response session&#xD;
+ - Custom login form template (login.phtml)&#xD;
+ - Global and per user settings configuration&#xD;
+ - Mode auto-create local account on first login&#xD;
+ - The plugin will transparently support any OpenOTP Login Mode including:&#xD;
+   &gt; LDAP only&#xD;
+   &gt; OTP only&#xD;
+   &gt; LDAP+OTP with user challenge-response&#xD;
+ - Possibility to enable plugin logs (/var/logs/openotp.log)&#xD;
+</notes>
+    <authors><author><name>RCDevs</name><user>rcdevs</user><email>support@rcdevs.com</email></author></authors>
+    <date>2013-10-23</date>
+    <time>14:46:22</time>
+    <contents><target name="magecommunity"><dir name="RCDevs"><dir name="OpenOTP"><dir name="Block"><dir name="Adminhtml"><dir name="Permission"><dir name="User"><dir name="Edit"><dir name="Tab"><file name="Openotp.php" hash="53b81b752b9b5c3e64f1e60b10caaa44"/></dir></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="3ff4f896bafe664c9a986b8131479f4a"/></dir><dir name="Model"><file name="Auth.php" hash="14665ff97734988f83595a5bf83089ea"/><file name="Config.php" hash="060ae60b8154e5d105c13ef7dd05449e"/><file name="Observer.php" hash="0c325e1d31db0dd0140a4efd8d59932c"/><file name="Session.php" hash="6763eb200ba70b230b0f46f7e87dd602"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="OpenotpController.php" hash="0151d7b0985bb33f0ee21fbc9ddd1695"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/><file name="._.DS_Store" hash="c7afd6e713ac1bdfff2ea4d2f9cfc0dc"/></dir></dir><dir name="etc"><file name="config.xml" hash="dd90ece2a7369dd015b200f0048f1692"/><file name="openotp.wsdl" hash="edcfd264dc9df5cbccf1fb9554379ab7"/><file name="system.xml" hash="732a359d8db02252a82a057038810aef"/></dir><dir name="sql"><dir name="rcdevs_openotp_setup"><file name="install-1.0.0.php" hash="61f70158bbcdc4bc03a7232fff2b51e6"/><file name="mysql4-install-1.0.0.php" hash="f4600383a0f0b439b35e8dc3870f679a"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="rcdevs_openotp.xml" hash="b49c3390c2fbd65180af3c0ec20dca59"/></dir><dir name="template"><dir name="rcdevs_openotp"><file name="login.phtml" hash="5868ba7896505844be892f9663461344"/></dir></dir></dir></dir></dir></target><target name="magelocale"><dir><dir name="en_US"><file name="RCDevs_OpenOTP.csv" hash="1f28e7017af2d42d09164f85c9da658a"/></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="images"><dir name="rcdevs_openotp"><file name="openotp_banner.png" hash="7b5226d26301e717471cf4e66b0b21e2"/><file name="openotp_closebtn.png" hash="2f20f6b977639883852f8ffd9e14f19e"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="RCDevs_OpenOTP.xml" hash="c4b719c5f7d76e809587ce9b023b29e1"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>4.0.0</min><max>5.0.0</max></php><extension><name>soap</name><min></min><max></max></extension></required></dependencies>
+</package>

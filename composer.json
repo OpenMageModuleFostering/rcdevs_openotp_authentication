@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/RCDevs_OpenOTP_Authentication",
+    "type": "magento-module",
+    "license": "GNU-General-Public-License-(-GPL-)",
+    "homepage": "",
+    "description": "This Plugin enables strong two factor authentication for admins and users to connect to administration panel",
+    "authors": [
+    {
+        "name": "RCDevs",
+        "email": "support@rcdevs.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

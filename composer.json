@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/RCDevs_OpenOTP_Authentication",
+    "name": "openmage-module-fostering\/rcdevs_openotp_authentication",
     "type": "magento-module",
     "license": "GNU-General-Public-License-(-GPL-)",
     "homepage": "",
